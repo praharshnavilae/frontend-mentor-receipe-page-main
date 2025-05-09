@@ -42,46 +42,55 @@
     
         display: grid;
         place-items: center;
-        min-height: 125vh;
-        
     }
 
     .receipe {
         background-color: white;
-        border-radius: 30px;
         overflow: hidden;
-        margin: 10px;
-        padding: 5px;
+    }
+
+    @media (min-width: 400px) {
+        .receipe {
+            width: 700px;
+            border-radius: 20px;
+            padding: 25px;
+            margin: 8rem;
+        }
+
+        img {
+            border-radius: 10px;
+        }
     }
 
     img {
-        margin: 40px;
-        border-radius: 30px;
+        width: 100%;
     }
 
-    h1 {
+    .receipe h1 {
         font-family: var(--font-family-default-heading);
         font-size: 2.3em;
         font-weight: var(--fw-bold);
         color: var(--DarkCharcoal);
-        margin: 40px;
+        margin: 1.7rem;
     }
 
+    .receipe p {
+        margin: 1.7rem;
+    }
 
 
     .preptime {
         background-color: var(--RoseWhite);
         border-radius: 5%;
-        margin: 40px;
-        padding: 10px;
+        margin: 1.7rem;
+        padding: 5px;
         max-height: min-content;
     }
 
-    .preptime h3  {
+    .preptime p span  {
         font-size: 1.2em;
         color: var(--DarkRaspberry);
-        font-weight: var(--fw-semi-bold);
-        padding: 15px;
+        font-weight: var(--fw-semi-bold); 
     }
 
     .preptime ul li {
@@ -89,6 +98,7 @@
         line-height: 1.5;
         color: var(--DarkRaspberry);
         font-weight: var(--fw-semi-bold);
+        margin-inline-start: 0.2rem;
     }
 
     .ingredients {
@@ -99,13 +109,18 @@
     .ingredients h2 {
         font-family: var(--font-family-default-heading);
         font-size: 1.8em;
-        font-weight: var(--fw-bold);
+        font-weight: var(--fw-semi-bold);
         color: var(--Nutmeg);
-        padding: 15px;
+    }
+
+    .ingredients ul {
+        margin-inline: 1px;
+        padding: 5px;
     }
 
     .ingredients ul li {
-        padding: 8px 15px;
+        margin: 15px;
+        padding-inline: 20px;
         line-height: 1.5;
         font-weight: var(--fw-semi-bold);
     }
@@ -129,28 +144,24 @@
     }
 
     .instructions ol li {
-        padding: 7px;
+        padding: 7px 15px;
         line-height: 1.5;
         color: var(--Nutmeg);
         font-weight: var(--fw-semi-bold);
     }
 
     .nutrition {
-        font-family: var(--font-family-default-heading);
         margin: 5px 20px;
         margin-bottom: 10px;
         padding: 5px 0;
     }
  
     .nutrition h2 {
+        font-family: var(--font-family-default-heading);
         font-size: 1.8em;
         font-weight: var(--fw-bold);
         color: var(--Nutmeg);
         padding: 5px 15px;
-    }
-
-    p {
-        margin: 40px;
     }
 
     .passage {
